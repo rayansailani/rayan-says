@@ -8,7 +8,7 @@ const MessagePage = () => {
   console.log(messageText);
   // return ;
   return <Container>
-    <Paper sx={{padding: "3rem 3.5rem", height: "90vh !important", background: "rgb(227, 184, 146)"}}>
+    <Paper sx={{padding: "3rem 3.5rem", minHeight: "90vh !important", background: "rgb(227, 184, 146)"}}>
       <div dangerouslySetInnerHTML={{ __html: atob(messageText) }} />
     </Paper>
   </Container>;
